@@ -221,10 +221,6 @@ git push
 
 A GitHub Actions workflow is included to cross-compile the firmware whenever code is pushed. A passing CI build **does not mean** physical-hardware testing passed.
 
-## 10. Before posting results on LinkedIn
-
-Capture one short real video: the STM32F4 Discovery LED changing, a serial-terminal `stats` command, the SPI loopback `PASS` message, and a logic-analyzer capture of PD13 + SCK. Write measured results with the true CPU frequency, firmware commit, probe point and conditions. Do not present the attached concept GIF or infographic as a real bench measurement.
-
 ## Reference documents
 
 - [STM32F407 RM0090 Reference Manual](https://www.st.com/resource/en/reference_manual/rm0090-stm32f407-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
