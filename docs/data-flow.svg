@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="STM32F407 USART2 RX DMA circular buffer software queue and Cortex-M4 processing">
+ <rect width="1200" height="340" rx="22" fill="#07101d"/>
+ <text x="46" y="53" font-family="Arial,sans-serif" font-weight="bold" font-size="29" fill="#f0f5ff">STM32F407 • Real register-level RX pipeline</text>
+ <text x="46" y="81" font-family="Arial,sans-serif" font-size="17" fill="#9fb3cc">USART2  →  DMA1 Stream5 / Ch4  →  SRAM circular buffer  →  RX software FIFO  →  Cortex-M4</text>
+ <g font-family="Arial,sans-serif" text-anchor="middle" font-weight="bold">
+  <rect x="42" y="124" width="172" height="118" rx="14" fill="#0c3a58" stroke="#43d3ff" stroke-width="2"/>
+  <text x="128" y="173" fill="#f8fdff" font-size="24">USART2</text><text x="128" y="204" fill="#9adff3" font-size="16">PA3 RX • PA2 TX</text>
+  <rect x="267" y="124" width="172" height="118" rx="14" fill="#403078" stroke="#b39cff" stroke-width="2"/>
+  <text x="353" y="169" fill="white" font-size="22">DMA1</text><text x="353" y="199" fill="#ddd2ff" font-size="15">Stream5 / Ch4</text>
+  <rect x="492" y="124" width="172" height="118" rx="14" fill="#093f54" stroke="#4ddaf2" stroke-width="2"/>
+  <text x="578" y="169" fill="white" font-size="21">SRAM</text><text x="578" y="199" fill="#c2f8ff" font-size="15">Circular • 256 B</text>
+  <rect x="717" y="124" width="172" height="118" rx="14" fill="#124a43" stroke="#4ef2ba" stroke-width="2"/>
+  <text x="803" y="169" fill="white" font-size="20">RX Queue</text><text x="803" y="199" fill="#b4ffe2" font-size="15">Software • 1024 B</text>
+  <rect x="942" y="124" width="216" height="118" rx="14" fill="#513110" stroke="#f9bc62" stroke-width="2"/>
+  <text x="1050" y="169" fill="white" font-size="20">Cortex-M4</text><text x="1050" y="199" fill="#ffe6ba" font-size="15">Process commands</text>
+ </g>
+ <g stroke="#50c5ff" stroke-width="4" fill="none"><path d="M216 183 H259"/><path d="M249 175 l10 8 -10 8"/><path d="M441 183 H484"/><path d="M474 175 l10 8 -10 8"/><path d="M666 183 H709"/><path d="M699 175 l10 8 -10 8"/><path d="M891 183 H934"/><path d="M924 175 l10 8 -10 8"/></g>
+ <text x="600" y="290" font-family="Arial,sans-serif" font-size="17" text-anchor="middle" fill="#a8bed6">DMA transfer is hardware-driven; CPU still executes ISR callbacks and application processing.</text>
+ <text x="600" y="319" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#8291a9">USART IDLE / DMA half / DMA complete = collection events | NVIC DMA priority 5, USART priority 6</text>
+</svg>
